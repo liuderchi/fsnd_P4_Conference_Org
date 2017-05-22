@@ -1,5 +1,11 @@
 # Udacity Conference Organizer README
 
+An conference organizer app to help you schedule your conferences.
+Deployed on Google Cloud Platform using and implemented by Python mostly.
+
+![screenshot][screenshot]
+
+
 This is a README of Udacity Nanodegree Project 4.
 This file is response to [project problems.](https://www.udacity.com/course/viewer#!/c-nd004/l-3566359178/m-3636408594)
 
@@ -63,6 +69,11 @@ ans = [session for session in sessions.fetch()
 ans = sessions.filter(
     Session.typeOfSession.IN(
     ["NOT_SPECIFIED", "LECTURE", "KEYNOTE", "CODELAB"])```
+```
 
   - since typeOfSession is not in fixed format, using solution 1 is better
       - this is implemented in `queryProblem()` in `conference.py`
+
+
+
+[screenshot]: https://cloud.githubusercontent.com/assets/4994705/26309672/6fe3befe-3f30-11e7-9072-b222db382652.png "screenshot"
